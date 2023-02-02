@@ -1,0 +1,178 @@
+footer{
+    .footer-first{
+        padding: 20px 70px;
+        padding-top: 55px;
+        text-align: center;
+        background-color: white;
+        h3{
+            color: rgb(35, 226, 35);
+            margin-bottom: 40px;
+        }
+        form{
+            div{
+                padding: 13px 0;
+                input{
+                    border: none!important;
+                    border: 1px solid rgb(220, 218, 218)!important;
+                    border-bottom: 1px solid rgb(58, 58, 58)!important;
+                    height: 50px;
+                }
+                .hi{
+                    margin-left: 9px;
+                }
+            }
+        }
+        .btn{
+            border: none;
+            margin-top: 40px;
+            padding: 12px 75px;
+            color: white;
+            background-color: rgb(25, 150, 34);
+            &:hover{
+                background-color: rgb(50, 127, 109);
+            }
+        }
+    }
+    .footer-second{
+        background-color: rgb(191, 191, 191);
+        padding-top: 40px;
+        .first{
+            a{
+                text-decoration: none;
+                color: black;
+                width: 100%;
+                .m-top{
+                    border-top: 3px dotted white; 
+                }
+                p{
+                    padding: 8px 0;
+                    font-size: larger;
+                    display: flex;
+                    justify-content: center;
+                    padding: 15px 0;
+                    margin: 0;
+                    &:hover{
+                        color: rgb(13, 193, 4);
+                    }
+                }
+               
+            }
+        }
+        .last{
+            padding: 10px 90px;
+            text-align: center;
+            .icon-div{
+                width: auto;
+                a{
+                    i{
+                        padding: 17px;
+                        border-radius: 70%;
+                        background-color: white;
+                        font-size: 27px;
+                        margin-left: 10px;
+                        color: rgb(50, 127, 109);
+                        &:hover{
+                            color: rgb(10, 220, 24);
+                        }
+                    }
+                }
+            }
+            .number{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                div{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        display: flex;
+                        padding: 0 10px;
+                        margin-left: 5px;
+                        i{
+                            margin-top: 6px;
+                            margin-right: 8px;
+                        }
+                    }
+                    &:hover a{
+                        color: rgb(13, 193, 4);
+                    }
+                }
+            }
+            .last-form{
+                form{
+                    display: flex;
+                    justify-content: center;
+                    .form-control{
+                        width: 50%;
+                    }
+                    .btn{
+                        border: none;
+                        padding: 12px 35px;
+                        margin-left: 50px;
+                        color: white;
+                        background-color: rgb(25, 150, 34);
+                        &:hover{
+                            background-color: rgb(50, 127, 109);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 619px){
+    footer{
+        .footer-first{
+            padding: 70px 10px;
+        }
+        .footer-second{
+            .number{
+                display: inline-block!important;
+                
+            }
+            .last{
+                .last-form{
+                    form{
+                        display: block;
+                        .form-control{
+                            width: 110%;
+                            margin-bottom: 15px;
+                        }
+                        .btn{
+                            padding: 8px 20px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 990px){
+    footer{
+        .footer-first{
+            padding: 70px 20px;
+        }
+        .footer-second{
+            .number{
+                display: grid!important;
+                grid-template-columns: 40% 60%;
+            }
+            .last{
+                .last-form{
+                    form{
+                        display: block;
+                        .form-control{
+                            width: 110%;
+                            margin-bottom: 15px;
+                        }
+                        .btn{
+                            padding: 8px 20px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
